@@ -34,3 +34,7 @@ def sum_array(array)
   array.each {|num| sum += num}
   sum
 end
+
+def add_s(array)
+  array.each_with_index { |element, index| array[index] = element << "s" if index != 1 }
+end
