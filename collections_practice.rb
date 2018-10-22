@@ -26,5 +26,5 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.find { |element| element[0].downcase == "a" }
+  array.scan { |element| element[0].downcase == "a" }
 end
